@@ -1,0 +1,175 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3498db;
+    
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+    background: #3498db;
+    
+    width: 100%;
+}
+
+.tableContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a00f2249;
+    height: 100%;
+}
+
+ .tableBox{
+    width: 80%;
+    height:100%;
+    padding: 0px;
+    background: #fff;
+ }
+
+.box{ 
+    width: 85%;
+    height: 705px;
+    margin: 40px;
+    border:2px solid black;
+    padding: 40px;
+    background:#f1ee26;
+}
+.headingBox{
+    width: 100%;
+    height: 8%;
+    padding-left: 5px;
+    margin-left: 3px;
+    background: #32CD32;
+    margin-top: 2px;
+}
+.headingText{
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1;
+    padding: 2px;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+}
+.alignCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+ 
+}
+.menuBox{
+    width: 18%;
+    height: 826px;;
+    padding: 15px;
+    float:left;
+    background: #00FFFF;
+}
+.textBox{
+    font-size: 128;
+    font-weight: 800;
+    letter-spacing: 1;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+.navContainer{
+display: flex;
+ position:absolute; 
+ left:270px; 
+ top:25px;
+ background: #3498db;
+height: 10vh;
+width: 78%;
+
+}
+.img{
+    display:inline-block;
+    position: absolute;
+    right:20px; 
+    top:5px;
+}
+
+.rightBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#F5F5DC;
+    width: 78%;
+    position:absolute; 
+    left:270px;
+    top: 3px;
+    height: 100%;
+}
+.smallBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#f1ee26;
+    width: 20%;
+    position:absolute; 
+    left:3px;
+    top: 15px;
+    height: 20%;
+}
+.secondBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#f1ee26;
+    width: 20%;
+    position:absolute; 
+    left:280px;
+    top: 15px;
+    height: 20%;  
+}
+.thirdBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#f1ee26;
+    width: 20%;
+    position:absolute; 
+    left:560px;
+    top: 15px;
+    height: 20%;  
+}
+.fourthBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#f1ee26;
+    width: 20%;
+    position:absolute; 
+    left:840px;
+    top: 15px;
+    height: 20%;  
+}
+.fifthBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#3498db;
+    width: 100%;
+    position:absolute; 
+    left:3px;
+    top: 166px;
+    height: 100%;
+    padding: 10px;  
+}
+
+.login{
+    padding: 20px;
+    width:35%;
+    height:85%;
+    margin-top: 50px;
+    background: #00FFFF;
+    
+    border: 5px solid black;
+ }
+ .admin{
+    font-size: 42;
+ }  

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="/stylesheets/project.css"/>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="/javascripts/project.js"></script>
+</head>
+
+<body>
+
+          <div class="menuBox">
+
+            <div class="row" >
+                <div class='input-field col s12'>
+                  <div style="display: flex;justify-content:center;">
+                    <img src="/images/logo.png" width="120px" >
+                 </div>
+                    <div style="display: flex;justify-content:center;">
+                        <img src="/images/<%= admin.picture%>" style="width:150px;border-radius: 50px; padding-left: 10px;">
+                     </div>
+                     <div style="display: flex;justify-content: center;font-size: 38px;font-weight: bold;">
+                     
+                      <%= admin.adminname %>
+                    
+                   </div>
+                     
+                  </div>
+            </div>
+          
+         
+          
+      
+
+      <div class="row" >    
+        <div style=" font: size 48;;padding:2px;font-weight:bolder;display: flex; ">
+           <a href="/product/product" > <i class="material-icons prefix" style="letter-spacing: 20px;">local_mall</i> ADD PRODUCT      </a> 
+        </div>
+      </div>      
+      
+          
+
+          
+            <div class="row" >
+                
+                    <div style="font-size:32; padding:2px;font-weight:bolder;display: flex;">
+                      <a href="/product/update_all_products" >    <i class="material-icons prefix" style="letter-spacing: 20px;"> receipt</i>  UPDATE PRODUCT </a>
+                    
+                     
+                  
+            </div>
+          </div>
+          
+          
+           
+
+          <div class="row" >
+            
+                <div style="font-size:32; padding:2px;font-weight:bolder; display: flex;">
+                  <a href="/product/display_all_products" ><i class="material-icons prefix "  style="letter-spacing: 20px;">tv</i>DISPLAY PRODUCTS  </a>
+            </div>
+          </div>
+
+          <div class="row" >
+                
+            <div style="font-size:32; padding:2px;font-weight:bolder;display: flex;">
+            <a href="/admin/adminlogout">    <i class="material-icons prefix" style="letter-spacing: 20px;">power_settings_new</i>LOG OUT  </a>
+            </div>
+      </div>
+      </div>
+
+      
+    </div>
+
+    <div class="rightBody">
+      <div class="smallBox">
+        <i class="material-icons prefix" style="letter-spacing: 20px; position:absolute; left:20px; top: 62px; font-size: 48px; ">local_mall</i>
+        <div style="display: flex;  position:absolute; left:120px; top: 50px; font-size: 48px; font-weight: bold;"><%= result[0][0].countproducts %></div>
+        <span  style="display: flex;  position:absolute; left:15px; top: 22px; font-size: 22px; font-weight: bold;">
+          TOTAL PRODUCT
+        </span>
+      </div>
+      <div class="secondBox">
+        <i class="material-icons prefix" style="letter-spacing: 20px; position:absolute; left:20px; top: 62px; font-size: 48px; ">category</i>
+        <span style="display: flex;  position:absolute; left:120px; top: 50px; font-size: 48px; font-weight: bold;"><%= result[1][0].countcategory %></span>
+        <span  style="display: flex;  position:absolute; left:13px; top: 22px; font-size: 22px; font-weight: bold;">
+         TOTAL CATEGORY
+        </span>
+      </div>
+      <div class="thirdBox">
+        <i class="material-icons prefix" style="letter-spacing: 20px; position:absolute; left:20px; top: 62px; font-size: 48px; ">shopping_cart</i>
+        <span style="display: flex;  position:absolute; left:120px; top: 50px; font-size: 48px; font-weight: bold;"><%= result[2][0].countbrand %></span>
+        <span  style="display: flex;  position:absolute; left:20px; top: 22px; font-size: 24px; font-weight: bold;">
+        TOTAL BRAND
+        </span>
+      </div>
+      <div class="fourthBox">
+        <i class="material-icons prefix" style="letter-spacing: 20px; position:absolute; left:20px; top: 62px; font-size: 48px; ">store</i>
+        <span style="display: flex;  position:absolute; left:120px; top: 50px; font-size: 48px; font-weight: bold;"><%= result[0][0].countstock %></span>
+        <span  style="display: flex;  position:absolute; left:20px; top: 22px; font-size: 24px; font-weight: bold;">
+        TOTAL STOCK
+        </span>
+      </div>
+      <div class="fifthBox">
+        <iframe src="/product/display_all_products" frameborder="1" name="mw" width="100%" height="100%" style="position: absolute;;"></iframe>
+      </div>
+    </div>
+</body>
+</html>
